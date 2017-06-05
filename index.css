@@ -7,6 +7,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px;
 }
 
+body {
+  background-image: url("images/carpet.jpg");
+  background-size: fill;
+  background-repeat: repeat;
+}
+
 .ai-slot {
   flex-direction: row-reverse;;
   justify-content: space-between;
@@ -29,11 +35,12 @@ h1, h2, h3, h4, h5, h6 {
 .button {
 
 }
+
 .card {
-  border: solid white .5px;
+  border: solid #f8f8f8 .5px;
   border-radius: 5px;
-  height: 120px;
-  width: 60px;
+  height: 60px;
+  width: 30px;
   margin: 2px;
   padding: 10px;
   display: flex;
@@ -46,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 .Diamond { background-image: url('./images/diamond.png'); }
 
 .card.face {
-  background-color: white;
+  background-color: #fafafa;
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;*/
@@ -61,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   align-items: center;
-  border: solid white 2px;
+  border: solid #f8f8f8 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -75,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .displayNormal{
   display: block;
-  background-color: white;
+  background-color: #f8f8f8;
 }
 
 .displayNone{
@@ -107,16 +114,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .player-name {
-  background-color: rgba(0,0,0,0.5);
-  border: outset white 2px;
-  color: rgb(79, 164, 108);
+  background-color: rgba( 13, 13, 13, 0.5 );
+  color: rgb( 79, 164, 108 );
   padding: 5px;
 
 }
 
 .player-name {
-  text-shadow: -1px 0 #00fff6, 0 1px #00deff, 1px 0 rgba(255, 243, 243, 0.92), 0 -1px #daff00;
-  color: #ff3d00;
+  text-shadow: 1px 1px 5px #bada55;
+  color: #fafafa;
 }
 
 .player-slot {
@@ -138,13 +144,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .table {
   align-items: center;
-  background-color: rgb(26, 85, 28);
   background-image: url('https://s27.postimg.org/751qujf8j/Game_Page_BJ_Main_1461050691624_tcm1582_294463.jpg');
+  background: radial-gradient( circle, #f8f8f8 5%, #bada55 50%, green 90% );
+  background: -webkit-radial-gradient( circle, #f8f8f8 5%, #bada55 50%, green 90% );
+  background: -o-radial-gradient( circle, #f8f8f8 5%, #bada55 50%, green 90% );
+  background: -moz-radial-gradient( circle, #f8f8f8 5%, #bada55 50%, green 90% );
   background-repeat: no-repeat;
   background-position: right;
   background-size: 100%;
-  border-color: black;
-  border-radius: 60px;
+  border: groove brown 3px;
+  box-shadow: 8px 8px 20px 5px #0d0d0d;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   border-style: inset;
   border-width: 2px;
   display: flex;
@@ -152,7 +165,5 @@ h1, h2, h3, h4, h5, h6 {
   height: 500px;
   justify-content: space-between;
   min-height: 80%;
-  width: 95%;
-  /*border-image-source: url('https://s27.postimg.org/xhl5spu3n/image.jpg');
-  border-image-repeat: repeat;*/
+  width: 70%;
 }

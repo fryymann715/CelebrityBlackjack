@@ -22000,6 +22000,15 @@
 	      round = _ref.round;
 
 
+	  // const showValue = () => {
+	  //   if ( dealer.hand.value ){
+	  //     return dealer.hand.value
+	  //   } else {
+	  //     return 0
+	  //   }
+	  // }
+
+	  console.log("MESSAGE :: ", message);
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'table' },
@@ -22012,7 +22021,7 @@
 	      'div',
 	      { className: 'slot ai-slot' },
 	      _react2.default.createElement(_Player2.default, { name: ai_1.name, hand: ai_1.hand }),
-	      _react2.default.createElement(_MessageZone2.default, { message: message }),
+	      message.length > 1 ? _react2.default.createElement(_MessageZone2.default, { message: message }) : null,
 	      _react2.default.createElement(_Player2.default, { name: ai_2.name, hand: ai_2.hand })
 	    ),
 	    _react2.default.createElement(
